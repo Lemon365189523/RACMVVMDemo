@@ -59,6 +59,7 @@
     return manager;
 }
 
+#pragma mark -private
 //转json
 +(id ) p_jsonData:(id)data{
     NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];

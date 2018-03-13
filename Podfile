@@ -9,4 +9,6 @@ target 'RAC-Demo' do
   pod 'ReactiveObjC', '~> 3.0.0'
   pod 'YYModel'
   pod 'AFNetworking'
+  pod 'Masonry'
+  pod 'SDWebImage'
 end

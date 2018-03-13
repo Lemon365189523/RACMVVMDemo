@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E710918623538FD1796FD7C6 /* Pods_RAC_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D63813DF6588C9C95E4C70B /* Pods_RAC_Demo.framework */; };
+		F71EDF7820565A1600F282D6 /* LMHomeCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F71EDF7720565A1600F282D6 /* LMHomeCellVM.m */; };
+		F71EDF7B20566A4200F282D6 /* LMHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F71EDF7A20566A4200F282D6 /* LMHomeCell.m */; };
 		F726412E1F01035300ACF977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F726412D1F01035300ACF977 /* main.m */; };
 		F72641311F01035300ACF977 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F72641301F01035300ACF977 /* AppDelegate.m */; };
 		F72641371F01035300ACF977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72641351F01035300ACF977 /* Main.storyboard */; };
@@ -23,6 +25,10 @@
 		1C3880B189DB8F6FB9CF22FD /* Pods-RAC-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAC-Demo/Pods-RAC-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		3D63813DF6588C9C95E4C70B /* Pods_RAC_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAC_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08683237899273F46F645D7 /* Pods-RAC-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAC-Demo/Pods-RAC-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		F71EDF7620565A1600F282D6 /* LMHomeCellVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMHomeCellVM.h; sourceTree = "<group>"; };
+		F71EDF7720565A1600F282D6 /* LMHomeCellVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMHomeCellVM.m; sourceTree = "<group>"; };
+		F71EDF7920566A4200F282D6 /* LMHomeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMHomeCell.h; sourceTree = "<group>"; };
+		F71EDF7A20566A4200F282D6 /* LMHomeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMHomeCell.m; sourceTree = "<group>"; };
 		F72641291F01035300ACF977 /* RAC-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RAC-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F726412D1F01035300ACF977 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F726412F1F01035300ACF977 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -146,6 +152,8 @@
 			children = (
 				F7EAEDA0205290CA00B1FE77 /* LMHomeVM.h */,
 				F7EAEDA1205290CA00B1FE77 /* LMHomeVM.m */,
+				F71EDF7620565A1600F282D6 /* LMHomeCellVM.h */,
+				F71EDF7720565A1600F282D6 /* LMHomeCellVM.m */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -153,6 +161,8 @@
 		F7EAED922052747B00B1FE77 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F71EDF7920566A4200F282D6 /* LMHomeCell.h */,
+				F71EDF7A20566A4200F282D6 /* LMHomeCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,13 +272,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RAC-Demo/Pods-RAC-Demo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +313,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7EAEDA2205290CA00B1FE77 /* LMHomeVM.m in Sources */,
+				F71EDF7B20566A4200F282D6 /* LMHomeCell.m in Sources */,
+				F71EDF7820565A1600F282D6 /* LMHomeCellVM.m in Sources */,
 				F7EAED96205279C700B1FE77 /* RACNetworking.m in Sources */,
 				F7EAED9F20528D7200B1FE77 /* LMArticleModel.m in Sources */,
 				F72641311F01035300ACF977 /* AppDelegate.m in Sources */,

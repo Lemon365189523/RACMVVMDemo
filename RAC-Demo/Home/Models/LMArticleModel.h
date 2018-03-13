@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface LMArticleModel : NSObject
 
 @property (nonatomic, strong) NSString *articleId;
@@ -19,5 +20,7 @@
 @property (nonatomic, strong) NSString *title;
 
 @property (nonatomic, assign) NSInteger type;
+
+@property (nonatomic, strong) NSString *pic;
 
 @end
